@@ -1,0 +1,36 @@
+#box{
+    width: 30%;
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:700px) {
+    #box{
+        width: 80%;
+    }
+}
+
+#disp{
+    grid-column: 1/5;
+    border-radius: 5px;
+    height: 60px;
+}
+.mybtn{
+    border: none;
+    background-color: white;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.mybtn:nth-of-type(23){
+    grid-row: 7/8;
+    grid-column: 3/5;
+    font-size: x-large;
+}
+
