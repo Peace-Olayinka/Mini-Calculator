@@ -21,15 +21,19 @@ function mySymbol(mySym) {
 
 // operation
  function myEquals() {
-    disp.value =eval(disp.value)
+    disp.value = eval(disp.value)
 }
 
 // to clear all 
-function deleteNum() {
+function clearNum() {
     myDisplay.splice(0, myDisplay.length)
     disp.value = myDisplay
 }
 
+function deleteNum() {
+    myDisplay.pop()
+    disp.value = myDisplay
+}
 
 
 
